@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5400 Final Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        img {
+            display: block;
+            margin-top: 20px;
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        h2, p {
+            color: #333;
+            font-size: 16px;
+        }
+        a {
+            color: #007bff; /* Bootstrap default blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .error-message {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 50px; /* Adjust based on your layout */
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <label for="ticker">Select Ticker:</label>
+        <select name="ticker" id="ticker">
+            {% for ticker in tickers %}
+            <option value="{{ ticker }}" {% if ticker == selected_ticker %}selected{% endif %}>{{ ticker }}</option>
+            {% endfor %}
+        </select>
+        <label for="topic">Select Topic (Optional):</label>
+        <select name="topic" id="topic">
+            <option value="">None</option>
+            {% for topic in topics %}
+            <option value="{{ topic }}" {% if topic == selected_topic %}selected{% endif %}>{{ topic.replace('_', ' ').title() }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Generate Graph</button>
+    </form>
+    
+    {% if error_message %}
+        <div class="error-message">
+            <p>{{ error_message }}</p>
+        </div>
+    {% else %}
+        <!-- Article Details Section -->
+        {% if article_title %}
+        <div class="article-details">
+            <h2>Title: <a href="{{ article_url }}" target="_blank">{{ article_title }}</a>
+            <small>(Published on {{ publication_time }})</small></h2>
+            <p>Author: {{ authors }}</p>
+            <p>Summary: {{ summary }}</p>
+        </div>
+        {% endif %}
+        
+        <!-- Sentiment Chart Section -->
+        {% if sentiment_chart_html %}
+        <div>
+            <h2>Sentiment Chart:</h2>
+            {{ sentiment_chart_html|safe }}
+        </div>
+        {% endif %}
+
+        <!-- Treemap Graph Section -->
+        {% if treemap_plot_url %}
+        <div class="graph-container">
+            <h2>Treemap Graph:</h2>
+            <img src="data:image/png;base64,{{ treemap_plot_url }}" alt="Treemap Graph">
+        </div>
+        {% endif %}
+
+        <!-- Relation Map Graph Section -->
+        {% if relation_map_plot_url %}
+        <div class="graph-container">
+            <h2>Relation Map Graph:</h2>
+            <img src="data:image/png;base64,{{ relation_map_plot_url }}" alt="Relation Map Graph">
+        </div>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
