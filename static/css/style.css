@@ -1,0 +1,190 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url('/static/images/white_marble.jpeg');
+  background-size: auto; /* Change this to 'auto' or specify dimensions to enable tiling */
+  background-position: center; /* Center the image initially */
+  background-repeat: repeat; /* This will tile the image across the page */
+}
+
+/* ... other styles ... */
+
+
+body {
+  background-image: url('/static/images/white_marble.jpeg');
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+
+
+.banner {
+  background-image: url('/static/images/blue_marble.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjusted for spacing between children */
+  padding: 0 20px; /* Added padding to the left and right */
+}
+
+.banner-text {
+  font-size: 60px;
+  color: #fff;
+  font-weight: regular;
+}
+
+.powered-by {
+  display: flex;
+  flex-direction: column; /* Aligns children vertically */
+  align-items: left; /* Centers items horizontally */
+  font-size: 20px; /* Adjust size as necessary */
+}
+
+.Contributor {
+  display: flex;
+  flex-direction: column; /* Aligns children vertically */
+  align-items: right; /* Centers items horizontally */
+  font-size: 15px; /* Adjust size as necessary */
+}
+
+.powered-by-text {
+  color: #606060; /* Applies color only to the text */
+  margin-right: 10px; /* Optional: Adds space between the text and the image */
+}
+
+.powered-by img {
+  height: 100px; /* Adjust height as necessary */
+  margin-left: 0px; /* Spacing between text and image */
+  filter: none; 
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;  /* Space between groups */
+}
+
+
+.dropdown label, .dropdown select, .dropdown button {
+  font-size: 18px;  /* Maintains larger font size for readability */
+}
+
+.dropdown select, .dropdown button {
+  border: 2px solid #B4CFED;  /* Border color to match background */
+  padding: 8px 10px;  /* Adequate padding for text */
+  border-radius: 10px;  /* Rounded corners with 10px radius */
+}
+
+.dropdown select {
+  padding: 8px 10px;  /* Adequate padding for larger text */
+  margin-right: 20px;  /* Maintain spacing after each select */
+  white-space: nowrap; 
+  
+  appearance: none;
+}
+
+.dropdown button {
+  padding: 10px 20px;  /* Balanced padding for a larger button */
+  color: #FFF;  /* White font color */
+  background-color: #B4CFED;  /* Light blue background */
+  cursor: pointer; 
+}
+
+.dropdown label {
+  margin: 0;
+  padding-right: 5px;  /* Keeps label close to its dropdown */
+  
+}
+
+/* Ensure that the form container is appropriately styled */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  /* Centers form contents horizontally */
+  width: 100%;  /* Takes full width to accommodate all children */
+}
+
+.centered-dropdown, .top-left-dropdown {
+  width: 100%;  /* Ensures the dropdown container takes full width */
+}
+
+/* Adjust this if using in top-left-dropdown */
+.top-left-dropdown {
+  justify-content: flex-start; /* Aligns items to the start when in top-left position */
+}
+
+
+
+
+/* first row content */
+/* Container for holding both the article details and the sentiment chart */
+.content-container {
+  display: flex;
+  flex-direction: row;  /* Align children horizontally */
+  justify-content: space-between;  /* Space between the columns */
+  margin: 20px 20px 0px 20px; /* Margin around the container */
+}
+
+/* Style for the article details section */
+.article-details,.sentiment-chart-container {
+  flex: 1;  /* Takes up half the space */
+  padding: 20px;  /* Padding inside the article details */
+  margin-right: 5px;  /* Spacing between the article details and the chart */
+}
+
+/* Style for the sentiment chart section */
+.sentiment-chart-container {
+  flex: 1;  /* Takes up the other half of the space */
+  padding: 20px;  /* Padding inside the sentiment chart */
+}
+
+/* Ensure text is easily readable and sections are well-defined */
+.article-details h2, .article-details p, .sentiment-chart-container h2 {
+  color: #333;
+  font-size: 30px;
+}
+
+.article-details a {
+  color: #007bff;  /* Bootstrap default blue */
+  text-decoration: none;
+}
+
+.article-details a:hover {
+  text-decoration: underline;
+}
+
+.graph-container {
+  margin-top: 10px;  /* Reduced top margin to bring it closer to the content above */
+}
+
+
+
+/* General style for graph containers */
+.graph-container {
+  margin: 20px 40px;  /* Top and bottom margin of 20px, left and right margin of 40px */
+  padding: 20px;  /* Padding around the content inside the container */
+  background-color: rgba(248, 249, 250, 0.5);  /* Light background color for the graph area */
+  border-radius: 10px;  /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+}
+
+.graph-container h2 {
+  color: #333;
+  font-size: 24px;  /* Larger font size for titles */
+  margin-bottom: 15px;  /* Space between the title and the graph */
+}
+
+.graph-container img {
+  width: 100%;  /* Full width of the container */
+  height: auto;  /* Maintain aspect ratio */
+  border-radius: 5px;  /* Rounded corners for the images */
+}
+
