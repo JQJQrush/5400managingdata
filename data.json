@@ -1,64 +1,70 @@
 {
-    "_id": "66168fe1f3570400d4cd1b45",
-    "title": "IBM: Web 3.0: How to Capitalize on the Future of the Internet",
-    "url": "https://stocknews.com/news/ibm-msft-intc-web-3-0-how-to-capitalize-on-the-future-of-the/",
-    "time_published": "20220421T113000",
-    "authors": {},
-    "summary": "The 1990s and the early 2000s gave the world an unprecedented change through the rise of what we call the Internet. Web 1.0 was ushered in when web browsers such as Netscape Navigator were introduced. The bland and disorganized web pages of this era were replaced by the era of social media and user-generated content. Over the past decade, the world saw an exponential rise of Web 2.0, which is characterized by the continuous rise of a handful of dominant platforms.",
-    "banner_image": "https://stocknews.com/wp-content/uploads/2021/08/shutterstock_1405194650-2-scaled.jpg",
-    "source": "Stocknews.com",
-    "category_within_source": "n/a",
-    "source_domain": "stocknews.com",
-    "topics": {
-        "Financial Markets": 0.779048,
-        "Manufacturing": 0.5,
-        "Earnings": 1,
-        "Technology": 0.5,
-        "Blockchain": 0.769861
+    "_id": "66168fe6f3570400d4cd626d",
+    "title": "This Solar Company's 5-Year Return Makes Bitcoin, Dogecoin, Tesla, Disney, Apple, Microsoft, Ford And Amazon Look Trivial",
+    "url": "https://www.benzinga.com/markets/cryptocurrency/22/05/27337504/this-solar-companys-5-year-return-makes-bitcoin-dogecoin-tesla-disney-apple-microsoft-ford",
+    "time_published": "20220521T175105",
+    "authors": {
+        "Henry Khederian": true
     },
-    "overall_sentiment_score": 0.089194,
+    "summary": "Enphase Energy Inc ( NASDAQ: ENPH ) is known as a global leader in solar energy solutions, and over the past five years, delivered beaming returns for traders and investors. Since May 2017, Enphase Energy stock's 5-year return has outperformed several of the world's most popular cryptocurrencies,",
+    "banner_image": "https://cdn.benzinga.com/files/images/story/2022/05/21/man-2425121.jpg?width=1200&height=800&fit=crop",
+    "source": "Benzinga",
+    "category_within_source": "Trading",
+    "source_domain": "www.benzinga.com",
+    "topics": {
+        "Retail & Wholesale": 0.333333,
+        "Manufacturing": 0.333333,
+        "Technology": 0.333333,
+        "Blockchain": 0.158519
+    },
+    "overall_sentiment_score": 0.114801,
     "overall_sentiment_label": "Neutral",
     "ticker_sentiment": {
-        "AMD": {
-            "relevance_score": 0.084982,
-            "ticker_sentiment_score": 0.077888,
-            "ticker_sentiment_label": "Neutral"
-        },
         "MSFT": {
-            "relevance_score": 0.224021,
-            "ticker_sentiment_score": 0.139781,
+            "relevance_score": 0.977196,
+            "ticker_sentiment_score": 0.044254,
             "ticker_sentiment_label": "Neutral"
         },
-        "NVDA": {
-            "relevance_score": 0.084982,
-            "ticker_sentiment_score": 0.143827,
-            "ticker_sentiment_label": "Neutral"
-        },
-        "AAPL": {
-            "relevance_score": 0.084982,
-            "ticker_sentiment_score": 0.077888,
-            "ticker_sentiment_label": "Neutral"
-        },
-        "IBM": {
-            "relevance_score": 0.251132,
-            "ticker_sentiment_score": 0.06832,
-            "ticker_sentiment_label": "Neutral"
-        },
-        "INTC": {
-            "relevance_score": 0.196633,
-            "ticker_sentiment_score": 0.164884,
+        "ENPH": {
+            "relevance_score": 0.706644,
+            "ticker_sentiment_score": 0.172183,
             "ticker_sentiment_label": "Somewhat-Bullish"
         },
-        "CRYPTO:BTC": {
-            "relevance_score": 0.028375,
-            "ticker_sentiment_score": 0.009188,
+        "AAPL": {
+            "relevance_score": 1,
+            "ticker_sentiment_score": 0.044459,
             "ticker_sentiment_label": "Neutral"
         },
-        "CRYPTO:POWR": {
-            "relevance_score": 0.196633,
-            "ticker_sentiment_score": 0.092408,
+        "TSLA": {
+            "relevance_score": 0.977196,
+            "ticker_sentiment_score": 0.044301,
+            "ticker_sentiment_label": "Neutral"
+        },
+        "F": {
+            "relevance_score": 0.706644,
+            "ticker_sentiment_score": 0.047617,
+            "ticker_sentiment_label": "Neutral"
+        },
+        "AMZN": {
+            "relevance_score": 0.516401,
+            "ticker_sentiment_score": 0.043455,
+            "ticker_sentiment_label": "Neutral"
+        },
+        "DIS": {
+            "relevance_score": 0.999765,
+            "ticker_sentiment_score": 0.047617,
+            "ticker_sentiment_label": "Neutral"
+        },
+        "CRYPTO:BTC": {
+            "relevance_score": 0.400691,
+            "ticker_sentiment_score": 0.044611,
+            "ticker_sentiment_label": "Neutral"
+        },
+        "CRYPTO:DOGE": {
+            "relevance_score": 0.400691,
+            "ticker_sentiment_score": 0.044284,
             "ticker_sentiment_label": "Neutral"
         }
     },
-    "topic_relevance": 1
+    "relevant_relevance_score": 1
 }
